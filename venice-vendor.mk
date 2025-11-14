@@ -17,14 +17,20 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
-    vendor/blackberry/venice/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
-    vendor/blackberry/venice/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
-    vendor/blackberry/venice/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
-    vendor/blackberry/venice/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so
+    vendor/blackberry/venice/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptXHD_encoder.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so
+
+# Audio FX
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/soundfx/libmmieffectswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmmieffectswrapper.so
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -76,6 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib_faceproc_adspstub.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_imx230.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx230.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_isp_abf44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf44.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_isp_bcc44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bcc44.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_be_stats44.so \
@@ -127,6 +134,19 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so
+
+# Camera extra libs
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_trueportrait_lib.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_stillmore_lib.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ubifocus_lib.so
 
 # Camera actuator
 PRODUCT_COPY_FILES += \
@@ -192,20 +212,79 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib/libchromatix_imx230_bbry_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx230_bbry_snapshot.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libchromatix_imx230_bbry_video_24fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx230_bbry_video_24fps.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libchromatix_imx230_bbry_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx230_bbry_video_4k.so \
-    vendor/blackberry/venice/proprietary/vendor/lib/libchromatix_imx230_bbry_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx230_bbry_video_hdr.so
+    vendor/blackberry/venice/proprietary/vendor/lib/libchromatix_imx230_bbry_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx230_bbry_video_hdr.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libllvd_smore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvd_smore.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_chromaflash_lib.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_llvd.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_optizoom_lib.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdafcamif.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppbase_module.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_vpu_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_vpu_module.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning_lookup.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dbg.so \
 
 # Camera eeprom
 PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_bbrya2030_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_bbrya2030_eeprom.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libmmcamera_bbrya2030_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bbrya2030_eeprom.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libmmcamera_bbryimx230_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_bbryimx230_eeprom.so
 
 # Camera firmware
 PRODUCT_COPY_FILES += \
-    vendor/blackberry/venice/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw
-
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/blackberry/venice/proprietary/vendor/firmware/RumbaS4_SEMCO_10339.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/camera/RumbaS4_SEMCO_10339.bin \
+    vendor/blackberry/venice/proprietary/vendor/firmware/RumbaS4OisFirmware.info:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/camera/RumbaS4OisFirmware.info \
 # CNE
 PRODUCT_PACKAGES += \
     CNEService
+
+# IMS
+PRODUCT_PACKAGES += \
+    RCSBootstraputil \
+    RcsImsBootstraputil \
+    rcsimssettings \
+    rcsservice \
+    ims_venice \
+
+# IMS
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
+    vendor/blackberry/venice/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
+    vendor/blackberry/venice/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-ims-rcscmjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-ims-rcscmjni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsSDP.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsdpl.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsqimf.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsrcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcs.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsrcscm.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcscm.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsrcscmclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcscmclient.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsrcscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcscmservice.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imss.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imss.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsvt.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsvt.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsxml.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-rcsimssjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rcsimssjni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-rcsjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rcsjni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimscamera_jni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-ims-rcscmjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-ims-rcscmjni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsSDP.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsrcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcs.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsrcscm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcscm.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsrcscmclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcscmclient.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsrcscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcscmservice.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imss.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvt.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsxml.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-rcsimssjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rcsimssjni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-rcsjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rcsjni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimscamera_jni.so
 
 PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
@@ -216,6 +295,12 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libcneconn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneconn.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcne.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneqmiutils.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libcneconn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneconn.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so
@@ -229,27 +314,68 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
+    vendor/blackberry/venice/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
-    vendor/blackberry/venice/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so
-
+    vendor/blackberry/venice/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libmdtp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdtp.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/lib-sec-disp.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-sec-disp.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureuisvc_jni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureuisvc_jni.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/lib-sec-disp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-sec-disp.so \
+    
+# Widevine
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.0-service.widevine \
+    vendor/blackberry/venice/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.0-service.widevine.rc \
+    vendor/blackberry/venice/proprietary/vendor/firmware/widevine.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b00 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/widevine.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b01 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/widevine.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b02 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/widevine.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b03 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so
+        
 # Gatekeeper
-#PRODUCT_COPY_FILES += \
-#    vendor/blackberry/venice/proprietary/vendor/lib64/hw/gatekeeper.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.msm8992.so
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/vendor/lib64/hw/gatekeeper.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.msm8992.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/hw/gatekeeper.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.msm8992.so
 
 # GPS
-PRODUCT_PACKAGES += \
-    libloc_api_v02 \
-    libloc_ds_api
-
 PRODUCT_COPY_FILES += \
-    vendor/blackberry/venice/proprietary/vendor/lib64/hw/flp.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/flp.default.so \
-    vendor/blackberry/venice/proprietary/vendor/lib64/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflp.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofence.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
-    vendor/blackberry/venice/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so
+    vendor/blackberry/venice/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflp.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/hw/flp.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/flp.default.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/hw/flp.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/flp.default.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libloc_ds_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_ds_api.so
+
+# GPU
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/vendor/lib/hw/vulkan.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.msm8992.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver_adreno.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/hw/vulkan.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.msm8992.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSDriver_adreno.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno_sha1.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
 
 # Graphics
 PRODUCT_COPY_FILES += \
@@ -258,6 +384,7 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
     vendor/blackberry/venice/proprietary/vendor/lib/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_adreno.so \
     vendor/blackberry/venice/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/blackberry/venice/proprietary/vendor/lib/libc2d30-a4xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a4xx.so \
@@ -268,6 +395,7 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_adreno.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libc2d30-a4xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30-a4xx.so \
@@ -279,9 +407,29 @@ PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
     vendor/blackberry/venice/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
 
+# Tomtom firmware
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b02 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b04 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b05 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b06 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b08 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b10 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b11 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b12 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b14 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b16 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b18 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b20 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.b21:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.b21 \
+    vendor/blackberry/venice/proprietary/vendor/firmware/cpe.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.mdt \
+
 # Keystore
-#PRODUCT_COPY_FILES += \
-#    vendor/blackberry/venice/proprietary/vendor/lib64/hw/keystore.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8992.so
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libkmcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmcrypto.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libkmcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkmcrypto.so
+#    vendor/blackberry/venice/proprietary/vendor/lib64/hw/keystore.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8992.so \
+#    vendor/blackberry/venice/proprietary/vendor/lib/hw/keystore.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.msm8992.so \
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -386,7 +534,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib64/hw/sensors.avengers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.avengers.so \
     vendor/blackberry/venice/proprietary/vendor/firmware/sensor-hub.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sensor-hub.bin \
-    vendor/blackberry/venice/proprietary/vendor/firmware/sensor_hub_mx_venice.zip:$(TARGET_COPY_OUT_VENDOR)/firmware/sensor_hub_mx_venice.zip \
+    vendor/blackberry/venice/proprietary/vendor/firmware/sensor_hub_mx_venice.zip:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/sensor_hub_mx_venice.zip \
     vendor/blackberry/venice/proprietary/vendor/lib/hw/activity_recognition.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.msm8992.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/hw/activity_recognition.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.msm8992.so \
 
@@ -410,7 +558,16 @@ PRODUCT_COPY_FILES += \
 # Time services
 PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so
-    
+
+# Keyboard
+PRODUCT_PACKAGES += \
+    BlackBerryKeyboard
+
+# BB Keyboard Dependencies
+PRODUCT_COPY_FILES += \
+    vendor/blackberry/venice/proprietary/priv-app/BlackBerryKeyboard/com.blackberry.only.jar:system/framework/com.blackberry.only.jar \
+    vendor/blackberry/venice/proprietary/priv-app/BlackBerryKeyboard/com.blackberry.only.xml:system/etc/permissions/com.blackberry.only.xml
+
 # Touch screen firmware
 PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/firmware/synaptics/60253-001.img:$(TARGET_COPY_OUT_VENDOR)/firmware/synaptics/60253-001.img \
@@ -428,12 +585,20 @@ PRODUCT_COPY_FILES += \
 
 # Widevine DRM
 PRODUCT_COPY_FILES += \
-    vendor/blackberry/venice/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so
-    
+    vendor/blackberry/venice/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libdrmdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmdecrypt.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
+    vendor/blackberry/venice/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
+    vendor/blackberry/venice/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so
+
 # NVRAM
 PRODUCT_COPY_FILES += \
     vendor/blackberry/venice/proprietary/vendor/bin/vtnvfsd:$(TARGET_COPY_OUT_VENDOR)/bin/vtnvfsd \
     vendor/blackberry/venice/proprietary/vendor/lib64/libsbgse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsbgse.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libsecureservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureservice.so \
     vendor/blackberry/venice/proprietary/vendor/lib64/libqseecomimport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseecomimport.so
-

@@ -1,0 +1,3 @@
+# FW_filename		FW_version	module_ID(1,111:SEMCO,2:LG-IT)	checksum_prog
+RumbaS4_SEMCO_10339.bin	10339		1				0x19eb
+RumbaS4_SEMCO_10339.bin	10339		111				0x19eb

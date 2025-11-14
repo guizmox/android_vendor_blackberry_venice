@@ -1,0 +1,3 @@
+<permissions>
+    <library name="com.blackberry.only" file="com.blackberry.only.jar"/>
+</permissions>
